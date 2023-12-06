@@ -238,7 +238,7 @@ if __name__ == '__main__':
     user_input = input('Which flight distance set do you choose ("L", "R", "T"): ')
     user_input = user_input.strip().upper()
     if user_input not in ["L", "T", "R"]:
-        print('si uz fakt kkt??')
+        print('\t\tINVALID INPUT -- EXIT')
         raise SystemExit(0)
     
     # 1.1 take a breakpoint values for coresponding set
@@ -260,7 +260,7 @@ if __name__ == '__main__':
             my_x = [min_value_distance, flight_distance_intervals[0], flight_distance_intervals[1], max_value_distance]
         get_single_plot(user_input, my_x)
     elif show_fuzzy != "N":
-        print('si uz fakt kkt??')
+        print('\t\tINVALID INPUT -- EXIT?')
         raise SystemExit(0)
     print("\n-- Part for Flight Distance done --\n")    # info
 
@@ -269,7 +269,7 @@ if __name__ == '__main__':
     user_input = input('Which satisfaction set do you choose ("L", "R", "T"): ')
     user_input = user_input.strip().upper()
     if user_input not in ["L", "T", "R"]:
-        print('si uz fakt kkt??')
+        print('\t\tINVALID INPUT -- EXIT?')
         raise SystemExit(0)
     # 3.1 take a breakpoint values for coresponding set
     print('\n>>WARNING:: satisfaction have values between 0-5 so you shoul use this values')
@@ -292,7 +292,7 @@ if __name__ == '__main__':
             my_x = [mim_value_satisfaction, satisfaction_intervals[0], satisfaction_intervals[1], max_value_satisfaction]
         get_single_plot(user_input, my_x)
     elif show_fuzzy != "N":
-        print('si uz fakt kkt??')
+        print('\t\tINVALID INPUT -- EXIT?')
         raise SystemExit(0)
     print("\n-- Part for satisfaction done --\n")    # info
 
