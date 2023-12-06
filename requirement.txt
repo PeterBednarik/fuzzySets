@@ -1,0 +1,6 @@
+- python	3.8
+
+Py packages:
+- matplotlib	3.3.2
+- numpy		1.24.4
+- pandas	2.0.3
